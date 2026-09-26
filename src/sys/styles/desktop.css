@@ -1,0 +1,99 @@
+body {
+  background-color: #0b0c10;
+  font-family: var(--font-family);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+/* 动态背景图 */
+.wallpaper-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at 50% 20%, #2c3e50, #000000);
+  z-index: 1;
+}
+
+/* 手机屏幕主容器 (保留顶部呼吸感与美观间距) */
+.phone-screen {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 430px;
+  height: calc(100vh - 40px);
+  margin-top: 30px; /* 顶部呼吸感留白 */
+  padding: 30px 24px 110px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* APP 4列网格 */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--grid-gap-y) var(--grid-gap-x);
+  justify-items: center;
+}
+
+/* 图标与文字样式 */
+.app-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--app-size);
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.app-item:active {
+  transform: scale(0.88);
+}
+
+.app-icon {
+  width: var(--app-size);
+  height: var(--app-size);
+  border-radius: var(--app-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+}
+
+.app-name {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+/* 底部 Dock 栏 */
+.dock-bar {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  height: 92px;
+  background: var(--dock-bg);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-soft);
+}

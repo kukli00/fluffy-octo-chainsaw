@@ -1,0 +1,23 @@
+:root {
+  /* iOS 26 审美设计规范 */
+  --app-size: 68px;
+  --app-radius: 20px;            /* 大圆角契合 iOS 高级审美 */
+  --grid-gap-x: 24px;
+  --grid-gap-y: 28px;
+  --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+  
+  /* 毛玻璃与光效参数 */
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.25);
+  --glass-blur: blur(25px);
+  --dock-bg: rgba(255, 255, 255, 0.2);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
