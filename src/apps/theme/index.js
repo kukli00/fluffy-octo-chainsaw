@@ -40,16 +40,6 @@ export function render(container) {
           </div>
         </div>
 
-        <!-- 预览与配色说明 -->
-        <div style="font-size: 13px; color: var(--text-secondary); margin-left: 4px; margin-top: 8px; transition: color 0.3s;">预览与模式配色</div>
-        <div style="background: var(--card-bg); border-radius: 18px; border: 1px solid var(--card-border); padding: 16px; font-size: 13px; line-height: 1.8; transition: background 0.3s, border 0.3s;">
-          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-            <span style="background: #007aff; color: #fff; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 600;">日间</span> 纯白底色 (#e2e8f0) + 苹果蓝色调 (#007aff)
-          </div>
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <span style="background: #1c1c1e; color: #0a84ff; border: 1px solid #0a84ff; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 600;">夜间</span> 深黑底色 (#000000) + 高亮蓝色调 (#0a84ff)
-          </div>
-        </div>
       </div>
     `;
 
