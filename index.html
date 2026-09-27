@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="zh-CN" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -8,7 +8,7 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; }
     
-    :root[data-theme="dark"] {
+    :root[data-theme="light"] {
       --bg-gradient: radial-gradient(circle at 50% 30%, #1e293b, #0f172a, #020617);
       --text-color: #ffffff;
       --text-secondary: rgba(255, 255, 255, 0.6);
@@ -107,7 +107,7 @@
 
   <script>
     function initTheme() {
-      const savedTheme = localStorage.getItem('friday_theme') || 'dark';
+      const savedTheme = localStorage.getItem('friday_theme') || 'light';
       document.documentElement.setAttribute('data-theme', savedTheme);
       const meta = document.getElementById('theme-color-meta');
       if (meta) meta.content = savedTheme === 'dark' ? '#000000' : '#f2f2f7';

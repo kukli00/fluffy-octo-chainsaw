@@ -1,5 +1,5 @@
 export function render(container) {
-  let currentTheme = localStorage.getItem('friday_theme') || 'dark';
+  let currentTheme = localStorage.getItem('friday_theme') || 'light';
 
   function applyThemeUI() {
     // 1. 设置系统级别的数据属性和缓存 (这会让 index.html 里靠 CSS 变量控制的部分自动变色)
